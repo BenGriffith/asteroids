@@ -20,6 +20,7 @@ def main():
             if event.type == pygame.QUIT:
                 return
         screen.fill(color=(0, 0, 0))
+        player.update(dt)
         player.draw(screen=screen)
         time_passed = clock.tick(60)
         dt = time_passed / 1000
